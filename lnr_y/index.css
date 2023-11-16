@@ -1,0 +1,141 @@
+.page {
+    width: calc(100% - 200px);
+    height: calc(100% - 200px);
+    padding: 100px 100px 100px 100px;
+    color: black;
+    position: relative;
+}
+.boldtext {
+    font-family: 'Pretendard-Regular';
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bold;
+}
+.nmtext {
+    font-family: 'Pretendard-Regular';
+    font-size: 2rem;
+    text-align: center;
+}
+
+#title {
+    font-family: 'Pretendard-Bold';
+    font-size: 10rem;
+    animation: AppearUp 0.8s ease-out 0s 1;
+}
+
+#subtitle {
+    font-size: 3rem;
+    animation: AppearUp 0.8s ease-out 0.5s 1 normal both;
+}
+
+#profilepage {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#profilepage > div {
+    display: flex;
+    flex-direction: row;
+}
+
+#profilepage > div > div {
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#profilepage > div > div > div {
+    margin: 0px 0px 50px 0px;
+}
+
+.preup {
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.up {
+    animation: AppearUp 1.2s ease-out 0s 1;
+}
+
+#dream {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#dream > div {
+    margin: 0 auto;
+    padding: 0px 0px 30px 0px;
+}
+
+#dream > div > div {
+    font-size: 1.2rem
+}
+
+@keyframes AppearUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#titlepage {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#instagram {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+#instagram > img {
+    width: 40px;
+    height: 40px;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+    background-color: #F5F5F5	;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    height: 100vh;
+
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
